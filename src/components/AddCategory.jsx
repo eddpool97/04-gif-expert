@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export const AddCategory = ({onNewCategory})=>{
 
-    const [inputValue, setInpuValue] = useState();
+    const [inputValue, setInpuValue] = useState('');
 
     const onInputChange = ({target})=>{
         let inputValue = target.value;
@@ -20,7 +20,7 @@ export const AddCategory = ({onNewCategory})=>{
     }
 
     return(
-        <form onSubmit={ handleSubmit}>
+        <form onSubmit={ handleSubmit }>
             <input 
                 type="text"
                 placeholder="Search Gif"
