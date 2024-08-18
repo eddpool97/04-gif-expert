@@ -11,6 +11,7 @@ export const GifGrid = ({ category })=>{
             <h3>{category}</h3>
 
             {
+                //Comentario
                 isLoading && ( <h2>Cargando...</h2> ) //Evaluacion AND logica resumida
             }
 
